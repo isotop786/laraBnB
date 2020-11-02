@@ -1,5 +1,5 @@
 <?php
-
+use App\Bookable;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,3 +14,5 @@
 Route::get('/{any?}', function () {
     return view('welcome');
 })->where('any','^(?!api\/)[\/\w\.-]*');
+
+
